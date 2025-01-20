@@ -166,8 +166,6 @@ By far the hardest part of this project was handling all the edge cases.  Before
 git clone https://github.com/RolandVrignon/minishell
 cd minishell
 make
-cd minishell
-make
 ```
 ### Run Minishell
 ```
