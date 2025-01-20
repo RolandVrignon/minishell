@@ -138,7 +138,7 @@ Before creating a child process, the parent process executes heredocs.  We handl
 Like in bash, builtin commands, specifically `cd`, `exit`, `export`, and `unset` cannot be run in a separate process, as then the environmentally variable cannot be properly altered.  If there is only one command, and it is one of the aforementioned builtins, it is executed in the parent process and the function returns back to the `minishell_loop`. If the command is not a builtin the single command function creates a new process and sends the command to `handle_cmd`.
 
 #### Multiple Commands
-If there are multiple commands, the executor loops through each `t_simple_cmds` node and creates a child process for it using `fork()`, and  using `pipe()` creates a pipe in order to send the output of one command as the input to the next.  Checkout [pipex](https://github.com/maiadegraaf/pipex) to learn more about these functions.
+If there are multiple commands, the executor loops through each `t_simple_cmds` node and creates a child process for it using `fork()`, and  using `pipe()` creates a pipe in order to send the output of one command as the input to the next.  Checkout [pipex](https://github.com/RolandVrignon/42_Pipex) to learn more about these functions.
 
 Essentially for each command the following happens:
 1. The command is expanded.
