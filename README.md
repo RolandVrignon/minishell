@@ -163,7 +163,9 @@ By far the hardest part of this project was handling all the edge cases.  Before
 ## Installation
 ### Clone the repository:
 ``` 
-git clone https://github.com/maiadegraaf/minishell.git
+git clone https://github.com/RolandVrignon/minishell
+cd minishell
+make
 cd minishell
 make
 ```
